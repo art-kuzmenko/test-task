@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: #F5F9FA;
+    font-family: "Lato", sans-serif;
+}
+
+.site-footer {
+    padding-top: 100px;
+}
+
+.flex {
+    display: flex;
+}
+
+.grey {
+    color: #9CA3AF;
+}
+
+.black {
+    color: #1B2636; 
+}
+
+.bank-cards {
+    margin-top: 100px;
+}
+
+.container {
+    max-width: 1210px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bank-first-row {
+    justify-content: space-between;
+}
+
+.bank-card {
+    background-color: #fff;
+    border-radius: 12px;
+    width: 100%;
+    -webkit-box-shadow: 0px -5px 4px -4px rgba(221, 221, 228, 1) inset;
+    -moz-box-shadow: 0px -5px 4px -4px rgba(221, 221, 228, 1) inset;
+    box-shadow: 0px -5px 4px -4px rgba(221, 221, 228, 1) inset;
+    padding: 20px;
+    margin-bottom: 12px;
+}
+
+.bank-logo {
+    margin-right: 16px;
+}
+
+.bank-logo img {
+    max-width: 72px;
+    max-height: 72px;
+    width: 100%;
+    height: 100%;
+}
+
+.bank-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.bank-credit-type {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.bank-info {
+    gap: 16px;
+    margin-top: 6px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.bank-text-info-mb {
+    display: none;
+}
+
+.link, .views {
+    margin-right: 6px;
+}
+
+.star, .like {
+    margin-right: 8px;
+}
+
+.bank-numbers {
+    gap: 32px;
+}
+
+.bank-summ-txt, .bank-year, .bank-psk {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.bank-summ-nmb, .bank-year-nmb, .bank-psk-nmb {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    padding-top: 4px;
+}
+
+.bank-chart-wrapper {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background-color: #F5F9FA;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.bank-btn {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 140%;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    background-color: #14B8AD;
+    height: 46px;
+    padding-left: 36px;
+    padding-right: 36px;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: all 0.7s;
+    &:hover {
+        background-color: #F7C206;
+    }
+}
+
+.bank-second-row {
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.bank-tags-wrapper {
+    margin-top: 16px;
+    gap: 8px;
+}
+
+.bank-tag {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5px 12px;
+    background-color: #F5F9FA;
+    border-radius: 46px;
+}
+
+.bank-more-info-link {
+    display: flex;
+    align-items: center;
+    color: #14B8AD;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    transition: all 0.7s;
+}
+
+.bank-more-info-icon {
+    margin-right: 10px;
+    transition: all 0.7s;
+} 
+
+@media screen and (max-width: 1250px) {
+    .container {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .bank-card {
+        padding: 16px;
+    }
+    .bank-logo {
+        margin-right: 12px;
+    }
+    .bank-first-row, .bank-second-row, .bank-info-wrapper {
+        flex-direction: column;
+    }
+    .bank-chart-wrapper {
+        order: 2;
+    }
+    .bank-btn {
+        order: 1;
+    }
+    .bank-name, .bank-credit-type {
+        display: none;
+    }
+    .bank-text-info-mb, .bank-logo {
+        display: flex;
+    }
+   .bank-text-info-mb {
+        flex-direction: column;
+        margin-left: 12px;
+   }
+   .bank-name-mb  {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 150%;
+   }
+   .bank-credit-type-mb {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 140%;
+   }
+   .bank-text-info {
+        margin-top: 14px;
+   }
+   .star, .like {
+        margin-right: 6px;
+   }
+   .link, .views {
+        margin-right: 8px;
+   }
+   .bank-more-info-wrapper {
+        width: 100%;
+   }
+   .bank-more-info-link {
+        justify-content: center;
+   }
+   .bank-numbers {
+        margin-top: 14px;
+        margin-bottom: 14px;
+   }
+   .bank-summ-wrapper, .bank-year-wrapper, 
+   .bank-psk-wrapper, .psk-inner {
+        display: flex;
+        align-items: center;
+   }
+   .bank-summ-txt, .bank-year, .bank-psk {
+        font-size: 12px;
+   }
+   .bank-summ-nmb, .bank-year-nmb, .bank-psk-nmb {
+        font-size: 14px;
+        padding-top: 0;
+        margin-left: 10px;
+   }
+}
+
+@media screen and (max-width: 520px) {
+    .bank-card {
+        width: 288px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+     .bank-numbers {
+        gap: 4px;
+        flex-direction: column;
+     }
+     .bank-summ-nmb, .bank-year-nmb, .bank-psk-nmb {
+        margin-left: 0;
+     }
+    .bank-summ-wrapper, .bank-year-wrapper, .bank-psk-wrapper, 
+    .psk-inner, .bank-btn-wrapper {
+        justify-content: space-between;
+    }
+    .psk-inner {
+        width: 100%;
+    }
+    .bank-chart-wrapper {
+        margin-right: 0;
+    }
+    .bank-more-info-link {
+        margin-top: 14px;
+    }
+    .bank-tags-wrapper {
+        gap: 4px;
+        overflow-x: scroll;
+        white-space: nowrap;
+        width: 288px;
+    }
+    .bank-tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 12px;
+    }
+    .bank-second-row {
+    overflow: hidden; 
+}
+}
